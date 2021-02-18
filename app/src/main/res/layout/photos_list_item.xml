@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:elevation="6dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/background2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp"
+            android:layout_margin="15dp"
+            app:elevation="6dp"
+            app:cardCornerRadius="6dp">
+
+            <ImageView
+                android:id="@+id/rounded_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/placeholder_photo"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="15dp"
+                android:text="Photo Title"
+                android:textSize="14sp"
+                android:textColor="@color/color5"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="3"/>
+
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/save_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_save_24"
+                    />
+
+                <ImageButton
+                    android:id="@+id/delete_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
